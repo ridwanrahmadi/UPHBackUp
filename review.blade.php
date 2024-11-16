@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<x-head title="Review Your Form" />
+	<x-head title="Review" />
 
 	<body class="container mt-3">
 		<div class="d-flex justify-content-between align-items-center mb-md-5 px-3 pt-3">
@@ -16,7 +16,7 @@
 				<div class="d-md-flex justify-content-between box-item">
 					<div class="left-content form-information d-flex flex-column justify-content-between">
 						<div>
-							<p class="text-uppercase">step 8 of 8</p>
+							<p class="text-uppercase">step 9 of 9</p>
 							<h3>Review</h3>
 							<p class="children w-75">Please check your inputted data</p>
 							<hr class="solid" />
@@ -80,10 +80,10 @@
 
 						<hr class="solid-review d-md-none" />
 
-						<div class="d-flex justify-content-between flex-column flex-md-row-reverse">
+						<div class="d-flex justify-content-between flex-column flex-md-column-reverse">
 							<!-- Tombol Verify -->
 							<div class="verify-btn">
-								<button type="button" class="btn select-program-btn rounded-0 w-100 px-5" data-bs-toggle="modal" data-bs-target="#emailVerify">
+								<button type="button" class="btn select-program-btn rounded-0 w-100 px-5" data-bs-toggle="modal" data-bs-target="#successModal">
 									Verify
 									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
 										<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" fill="#FFF" />
@@ -91,7 +91,7 @@
 								</button>
 							</div>
 							<div>
-								<button type="button" class="btn link back-review-btn d-none d-md-block" data-bs-dismiss="modal" onclick="window.location.href = '/personalinformation'">
+								<button type="button" class="btn link back-review-btn d-none d-md-block" data-bs-dismiss="modal" onclick="window.location.href = '/international/personalinformation'">
 									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
 										<path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" stroke="#7AA3FF" />
 									</svg>
@@ -99,7 +99,7 @@
 								</button>
 
 								<button type="button" class="d-md-none btn btn-back-responsive danger-button d-flex justify-content-center align-items-center mt-5 gap-2 px-5"
-									onclick="window.location.href = '/personalinformation'"><img src="/assets/arrow-back-red.png"
+									onclick="window.location.href = '/international/personalinformation'"><img src="/assets/arrow-back-red.png"
 										alt="arrow-left" class="arrow-left" />Edit your Personal Data</button>
 							</div>
 						</div>
@@ -109,7 +109,7 @@
 			<!-- desktop view ends -->
 		</div>
 		<!-- Modal -->
-		<div class="modal fade" id="" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+		<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content text-center">
 					<div class="modal-body modal-body-review">
@@ -120,36 +120,6 @@
 						<a href="/signin">
 							<button type="button" class="btn btn-primary w-50 rounded-0">Sign In</button>
 						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Modal Email Verification -->
-		<div class="modal fade" id="emailVerify" tabindex="-1" aria-labelledby="emailVerifyLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered modal-lg">
-				<div class="modal-content text-center">
-					<div class="modal-body modal-body-review">
-						<img src="/assets/mail.png" class="img-fluid mb-3" alt="Success Image" />
-						<!-- Replace with your image path -->
-						<div>
-							<p class="fs-4 review-modal-title mb-2">Confirm your Email</p>
-							<p class="review-modal-subtitle d-flex flex-column align-items-center mb-4">Confirm your email address to complete</p>
-						</div>
-
-						<div class="mb-3">
-							<p class="fs-4 review-modal-title mb-2">Hi, [First Name] [Middle Name] [Last Name]</p>
-							<p class="review-modal-subtitle d-flex flex-column align-items-center mb-1">Please confirm your email address to activate your account</p>
-							<p class="review-modal-subtitle"><strong>Open your email in </strong><span class="email-verify">[Email Address]</span></p>
-						</div>
-
-						<p class="register pb-3">Didn’t receive any Activation Email from us?</p>
-
-						<div class="d-flex justify-content-center gap-5">
-							<button type="button" class="btn btn-outline-danger rounded-0 w-25" data-bs-dismiss="modal">Back</button>
-							<button type="button" class="btn btn-danger rounded-0 w-45">Resend Activation Email</button>
-						</div>
-
 					</div>
 				</div>
 			</div>

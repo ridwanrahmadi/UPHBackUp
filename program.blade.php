@@ -1,21 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<x-head title="Program">
-		<x-slot name="inlineCSS">
-			<style>
-				.card-container {
-					overflow: scroll;
-				}
-
-				@media (min-width: 768px) {
-					.card-container {
-						overflow: visible;
-					}
-				}
-			</style>
-		</x-slot>
-	</x-head>
+	<x-head title="Program" />
 
 	<body class="container mt-3">
 		<div class="d-flex justify-content-between align-items-center mb-md-5 px-3 pt-3">
@@ -27,7 +13,7 @@
 			<div class="card card-container d-flex justify-content-between p-md-5 p-3">
 				<div class="d-md-flex justify-content-between box-item">
 					<div class="left-content mb-md-0 mb-3">
-						<p class="text-uppercase">step 6 of 8</p>
+						<p class="text-uppercase">step 7 of 9</p>
 						<h3>In which specific Program do you intend to apply?</h3>
 						<p class="children">Choose a program</p>
 						<hr class="solid" />

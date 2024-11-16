@@ -14,7 +14,7 @@
 				<div class="d-md-flex justify-content-between box-item">
 					<div class="d-flex flex-column">
 						<div class="left-content pb-3">
-							<p class="text-uppercase">step 5 of 8</p>
+							<p class="text-uppercase">step 6 of 9</p>
 							<h3>In which Faculty do you intend to study?</h3>
 							<p class="children">Choose a program major</p>
 							<hr class="solid" />
@@ -78,12 +78,13 @@
 				</div>
 
 				<span class="d-flex align-items-md-center btn-sign cursor-pointer gap-2" role="button">
-					<div class="d-none d-md-flex gap-2" onclick="window.location.href = '/fieldstudy'">
+					<div class="d-none d-md-flex gap-2" onclick="window.location.href = '/international/fieldstudy'">
 						<img src="/assets/left-arrow.png" alt="arrow-left" />
 						<p class="back-button p-0">back to College Selection</p>
 					</div>
 
-					<button type="button" class="d-md-none btn btn-back-responsive danger-button d-flex justify-content-center align-items-center mt-5 gap-2 px-5" onclick="window.location.href = '/fieldstudy'"><img
+					<button type="button" class="d-md-none btn btn-back-responsive danger-button d-flex justify-content-center align-items-center mt-5 gap-2 px-5"
+						onclick="window.location.href = '/international/fieldstudy'"><img
 							src="/assets/arrow-back-red.png"
 							alt="arrow-left" class="arrow-left" />back to College</button>
 				</span>

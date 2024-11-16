@@ -1,39 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<x-head title="Personal Information">
-		<x-slot name="inlineCSS">
-			<style>
-				.card-container {
-					overflow: scroll;
-				}
+	<x-head title="Personal Information" />
 
-				#additionalFields .dropdownList {
-					display: none;
-				}
-
-				.phone-input-group select {
-					max-width: 60px;
-					border-radius: 0;
-					margin-right: 5px;
-				}
-
-
-				@media (min-width: 768px) {
-					.card-box {
-						margin-right: -6rem;
-						overflow-y: scroll;
-						height: 435px;
-						width: 681px;
-					}
-
-					.card-container {
-						overflow: visible;
-					}
-				}
-			</style>
-		</x-slot>
-	</x-head>
 
 	<body class="container mt-3">
 		<div class="d-flex justify-content-between align-items-center mb-md-5 px-3 pt-3">
@@ -45,7 +14,7 @@
 			<div class="card card-container d-md-block p-md-5 p-3">
 				<div class="d-md-flex justify-content-between box-item">
 					<div class="left-content form-information w-md-25">
-						<p class="text-uppercase">step 7 of 8</p>
+						<p class="text-uppercase">step 8 of 9</p>
 						<h3>Personal Information</h3>
 						<p class="children">We would like to know you more!</p>
 						<hr class="solid" />
@@ -59,13 +28,11 @@
 									<div class="col-md-4 mb-3">
 										<label for="firstName" class="form-label">First Name</label>
 										<input type="text" class="form-control" id="firstName" placeholder="First Name" required />
-										<p class="file-validation pt-1 opacity-5">First name consists of only one word without spaces</p>
 									</div>
 									<!-- Middle Name -->
 									<div class="col-md-4 mb-3">
 										<label for="middleName" class="form-label">Middle Name</label>
 										<input type="text" class="form-control" id="middleName" placeholder="Middle Name" />
-										<p class="file-validation pt-1 opacity-5">If you don't have a middle name, leave this field blank</p>
 									</div>
 									<!-- Last Name -->
 									<div class="col-md-4 mb-3">
@@ -77,18 +44,7 @@
 									<!-- Mobile Phone Number -->
 									<div class="col-md-4 mb-3">
 										<label for="mobilePhone" class="form-label">Mobile Phone Number</label>
-										<div class="input-group phone-input-group">
-											<!-- Select for country code -->
-											<select class="form-select" id="countryCode">
-												<option value="+62">+62</option>
-												<option value="+1">+1</option>
-												<option value="+44">+44</option>
-												<option value="+91">+91</option>
-												<!-- Add more country codes as needed -->
-											</select>
-											<!-- Input for whatsapp number -->
-											<input type="tel" class="form-control" id="mobilePhone" placeholder="Phone Number" />
-										</div>
+										<input type="text" class="form-control" id="mobilePhone" placeholder="Mobile Phone Number" />
 									</div>
 									<!-- Guardian Name -->
 									<div class="col-md-4 mb-3">
@@ -97,19 +53,8 @@
 									</div>
 									<!-- Guardian Mobile Phone Number -->
 									<div class="col-md-4 mb-3">
-										<label for="guardianPhone" class="form-label">Guardian Phone Number</label>
-										<div class="input-group phone-input-group">
-											<!-- Select for country code -->
-											<select class="form-select" id="countryCode">
-												<option value="+62">+62</option>
-												<option value="+1">+1</option>
-												<option value="+44">+44</option>
-												<option value="+91">+91</option>
-												<!-- Add more country codes as needed -->
-											</select>
-											<!-- Input for whatsapp number -->
-											<input type="tel" class="form-control" id="guardianPhone" placeholder="Phone Number" />
-										</div>
+										<label for="guardianPhone" class="form-label">Guardian Mobile Phone Number</label>
+										<input type="text" class="form-control" id="guardianPhone" placeholder="Guardian Mobile Phone" />
 									</div>
 								</div>
 								<div class="row">
@@ -207,11 +152,6 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-4 mb-3">
-										<label for="email" class="form-label">Email Address</label>
-										<input type="email" class="form-control" id="email" placeholder="enter your Email Address" />
-									</div>
-
 									<div class="col-md-4">
 										<label class="form-label">YPPH/Lippo Employee</label>
 										<select id="employee" class="form-select">
@@ -382,7 +322,7 @@
 				console.log(formData);
 
 				// Redirect to the /review page
-				window.location.href = "/review";
+				window.location.href = "/international/review";
 			}
 
 			// Tambahkan event listener untuk kedua form

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<x-head title="Review" />
+	<x-head title="BIPA" />
 
 	<body class="container mt-3">
 		<div class="d-flex justify-content-between align-items-center mb-md-5 px-3 pt-3">
@@ -14,9 +14,10 @@
 				<div class="d-md-flex justify-content-between box-item">
 					<div class="d-flex flex-column justify-content-between">
 						<div class="left-content">
-							<p class="text-uppercase">step 3 of 9</p>
-							<h3>Which study level are you interested in?</h3>
-							<p class="children">Choose your study level</p>
+							<p class="text-uppercase">step 2 of 9</p>
+							<h3>Do You Have BIPA?</h3>
+							<p class="children-bipa">BIPA (Bahasa Indonesia untuk Penutur Asing)</p>
+							<p class="children-bipa">Do you have a certificate in the Indonesian language?</p>
 							<hr class="solid" />
 						</div>
 
@@ -24,7 +25,7 @@
 					</div>
 
 					<div class="d-flex flex-column card-box fade-in-right gap-3">
-						<a href="/campus">
+						<a href="/international/studylevel">
 							<div class="card-studylevel border-0"
 								style="background-image: url('/assets/studylevel1.png'); background-position: top">
 								<!-- Gradient Overlay -->
@@ -34,12 +35,12 @@
 								<!-- Title -->
 								<div class="title-container w-100">
 									<!-- <img src="icon-url.png" alt="icon" class="icon"/> -->
-									<h3 class="title w-100" style="color: #333333">Undergraduate (S1)</h3>
+									<h3 class="title w-100" style="color: #333333">Yes, I Have</h3>
 								</div>
 							</div>
 						</a>
 
-						<a href="/campus">
+						<a href="/international/studylevel">
 							<div class="card-studylevel border-0"
 								style="background-image: url('/assets/studylevel2.png'); background-position: top">
 								<!-- Gradient Overlay -->
@@ -49,7 +50,7 @@
 								<!-- Title -->
 								<div class="title-container">
 									<!-- <img src="icon-url.png" alt="icon" class="icon"/> -->
-									<h3 class="title w-100" style="color: #333333">Graduate (S2 & S3)</h3>
+									<h3 class="title w-100" style="color: #333333">No, I Don't</h3>
 								</div>
 							</div>
 						</a>
@@ -57,14 +58,14 @@
 				</div>
 
 				<span id="backToNationality" class="d-flex align-items-md-center cursor-pointer gap-2" role="button">
-					<div class="d-none d-md-flex gap-2" onclick="window.location.href = '/international'">
+					<div class="d-none d-md-flex gap-2" onclick="window.location.href = '/nationality'">
 						<img src="/assets/left-arrow.png" alt="arrow-left" />
-						<p class="back-button">back to BIPA Selection</p>
+						<p class="back-button">back to Student Nationality</p>
 					</div>
 
 					<button type="button" class="d-md-none btn btn-back-responsive danger-button d-flex justify-content-center align-items-center mt-5 gap-2 px-5"
-						onclick="window.location.href = '/international'"><img src="/assets/arrow-back-red.png"
-							alt="arrow-left" class="arrow-left" />BIPA Selection</button>
+						onclick="window.location.href = '/nationality'"><img src="/assets/arrow-back-red.png"
+							alt="arrow-left" class="arrow-left" />Student Nationality</button>
 				</span>
 			</div>
 			<!-- desktop view ends -->

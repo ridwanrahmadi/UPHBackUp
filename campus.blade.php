@@ -1,21 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<x-head title="Campus">
-		<x-slot name="inlineCSS">
-			<style>
-				.card-container {
-					overflow: scroll;
-				}
-
-				@media (min-width: 768px) {
-					.card-container {
-						overflow: visible;
-					}
-				}
-			</style>
-		</x-slot>
-	</x-head>
+	<x-head title="Campus" />
 
 	<body class="container mt-3">
 		<div class="d-flex justify-content-between align-items-center mb-md-5 px-3 pt-3">
@@ -28,7 +14,7 @@
 				<div class="d-md-flex justify-content-between box-item">
 					<div class="d-flex flex-column justify-content-between">
 						<div class="left-content">
-							<p class="text-uppercase">step 3 of 8</p>
+							<p class="text-uppercase">step 4 of 9</p>
 							<h3>On which campus do you intend to study?</h3>
 							<p class="children">Choose a campus</p>
 							<hr class="solid" />
@@ -104,12 +90,13 @@
 				</div>
 
 				<span id="backToNationality" class="d-flex align-items-md-center btn-sign cursor-pointer gap-2" role="button">
-					<div class="d-none d-md-flex gap-2" onclick="window.location.href = '/studylevel'">
+					<div class="d-none d-md-flex gap-2" onclick="window.location.href = '/international/studylevel'">
 						<img src="/assets/left-arrow.png" alt="arrow-left" />
 						<p class="back-button p-0">back to Study Level</p>
 					</div>
 
-					<button type="button" class="d-md-none btn btn-back-responsive danger-button d-flex justify-content-center align-items-center mt-5 gap-2 px-5" onclick="window.location.href = '/studylevel'"><img
+					<button type="button" class="d-md-none btn btn-back-responsive danger-button d-flex justify-content-center align-items-center mt-5 gap-2 px-5"
+						onclick="window.location.href = '/international/studylevel'"><img
 							src="/assets/arrow-back-red.png"
 							alt="arrow-left" class="arrow-left" />back to Study Level</button>
 				</span>
